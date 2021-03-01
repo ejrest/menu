@@ -1,0 +1,420 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1rem;
+	background-color: #000;
+
+}
+
+p {
+	margin-bottom: 0.9375rem;
+}
+
+.texto-regular {
+	font-weight: 400;
+}
+
+/*header*/
+
+.contenido-encabezado {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	
+
+
+	width: 100%; 
+	height: 100vh;
+	background-color: #000;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	box-shadow: inset 0 0 6.25rem 9.375rem rgba(0, 0, 0, .8); 
+}
+
+.texto-encabezado {
+	color: #fff;
+	
+
+}
+
+.texto-encabezado {
+	font-size: 1.875rem;
+}
+
+.texto-encabezado .titulo {
+	font-weight: 700;
+	font-size: 2.7rem;
+	animation: azul-neon 2s infinite alternate;
+	color: yellow;
+	letter-spacing: 0.625rem;
+}
+.cari{
+	font-size: 1.7rem;
+	color: rgb(26, 197, 26);
+	letter-spacing: 0.25rem;
+	animation: naran-neon 2s infinite alternate;
+
+}
+
+.texto-encabezado .titulo-naranja.neon
+, .vei {
+	margin-bottom: 0;
+	font-size: 2.5rem;
+	animation: naranja-neon 2s infinite alternate;
+
+}
+
+.texto-encabezado .bandera {
+	margin-top:	0.625rem ;
+	
+	width: 12.5rem;
+	filter: drop-shadow(  0 0 0.4375rem yellow);
+	}
+
+
+
+
+
+	
+.descripcion {
+	font-size: 1.125rem;
+	border: 0.0625rem solid #fff;
+	letter-spacing: 0.125rem;
+	padding: 0.625rem;
+	margin-top: 1.25rem;
+	width: 300px;
+}	
+	
+
+.descripcion::first-line{
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 0.625rem;
+	
+}
+
+.btn-link {
+	display: inline-block;
+	padding: 0.9375rem 1.875rem;
+	/* border: 0.375rem dotted #d79e5b;
+	border-radius: 0.625rem;
+	color: #fff; */
+	 /* text-decoration: none; */
+	font-size: 1.25rem ; 
+	/* text-shadow: 0 -1 0.25rem #fff, 0.125rem 0.125rem 0.625rem #ff0, 0.125rem -0.125rem 1.25rem #ff8000;
+	transition: .5s ease; */
+	animation: naranja-neon 2s infinite alternate;
+
+} 
+
+
+
+
+
+
+.descripcion a {
+	color: rgb(77, 230, 204);
+}
+
+
+
+
+
+/* MAIN */
+
+main {
+	color: #fff;
+	width: 100%;
+	min-height: 100vh;
+	z-index: 100;
+	position: relative;
+	margin-top: 100vh;
+	
+
+}
+
+main .contenedor {
+	width: 90%;
+	max-width: 62.5rem;
+	margin: auto;
+
+
+}
+
+
+.btn-link {
+	animation: naranja-neon 2s infinite alternate;
+
+}
+
+
+.contenedor {
+	display: flex;
+	flex-wrap: nowrap;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "pri pri"
+							"sec suc"
+							"papa papa"
+							"foot foot";
+}
+
+.primero {
+	grid-area: pri;
+}
+.seccion-1 {
+	grid-area: sec;
+	margin-right: 10px;
+	/* border:1px solid #fff; */
+	
+	
+}
+.seccion-2 {
+	grid-area: suc;
+	margin-right: 10px;
+	/* border:1px solid #fff; */
+
+	
+
+}
+
+.meals {
+	white-space: pre;
+}
+
+
+
+.bree {
+	margin-left: 0.625rem;
+}
+
+/* menu1  */
+
+main h3 {
+	color: rgb(14, 224, 14);
+	white-space: nowrap;
+}
+ .meals .me {
+	
+	
+	 word-spacing: 0.625rem;
+ }
+
+ .euro {
+	 word-spacing: 0.625rem;
+ }
+
+
+
+
+
+/* aletas */
+
+.aletas {
+	display: flex;
+	flex-direction: row;
+	}
+
+
+.aletas .wings {
+	padding-right: 0.5rem;
+	border-right: 0.125rem yellow dotted;
+	font-size: 1.125rem;
+}
+.aletas .wings::first-line{
+	font-weight: bold;
+	font-size: 1.3125rem;
+}
+
+.aletas .precios-aletas{
+	margin-left: 0.4375rem;
+	color: yellow;
+	font-size: 1.3125rem;
+	font-weight: bold;
+}
+
+
+
+/* complero */
+
+.completo {
+	margin-top: 1.875rem;
+}
+.completo .nu {
+	color: yellow;
+}
+
+.completo .completo-menu {
+	color: rgb(14, 224, 14);
+}
+
+/* patty */
+
+.patty h3{
+color: 	rgb(14, 224, 14);
+}
+
+
+
+
+
+
+/* drinks */
+
+.drink h3 {
+	color: rgb(14, 224, 14);
+}
+.drink .bebi {
+	color: #fff;
+}
+
+
+
+
+		/* slides */
+.slides{
+	/* background: yellow; */
+	text-align: center;
+	border: 0.5px solid yellow;
+	
+
+}
+.slides h4 {
+	font-size: 1.25rem;
+}
+
+
+/* dumpling */
+
+.dumpling{
+	text-align: center;
+	font-size: 1.875rem;
+}
+
+
+
+
+/* parrafo final */
+ .final{
+	border: 0.0625rem solid #fff;
+	font-size: 1.25rem;
+	margin :auto;
+	padding:0.625rem;
+	text-align:center;
+	
+	grid-area: papa;
+
+
+	 
+}
+
+
+
+
+
+
+.seccion-1 p {
+	max-width: 20rem;
+	
+}
+
+
+
+.footer {
+	background-color: #fff;
+	text-align: center;
+	padding: 0.625rem;
+	margin: auto;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	width: 100%;
+
+	grid-area: foot;
+	
+	}
+
+
+
+.footer a {
+	margin-right: 0.625rem;
+}
+
+.primero {
+	padding-top: 3.125rem;
+	text-align: center;
+	color: yellow;
+	font-size: 1.25rem;
+}
+
+
+
+
+
+
+/* animaciones */
+@keyframes azul-neon { 
+0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+	text-shadow:
+	5px 5px 12px green, 
+	1px 1px 3px rgb(83, 233, 13),
+	-5px -5px 12px rgb(83, 163, 4),
+	-5px -5px 18px green;
+
+}
+
+10%, 15%, 60% {
+	text-shadow: none;
+}
+
+}
+
+
+@keyframes naranja-neon { 
+	0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		text-shadow:
+		0px -1px 4px #fff, 
+		0px -2px 10px rgb(20, 124, 6),
+		0px -10px 20px rgb(20, 124, 6);
+	
+	}
+	
+	10%, 15%, 60% {
+		text-shadow: none;
+	}
+	
+	}
+
+
+	@keyframes naran-neon { 
+		0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+			text-shadow:
+		5px 5px 18px yellow, 
+		1px 1px 3px rgb(0, 0, 0),
+		-5px -5px 12px rgb(5, 20, 5),
+		-5px -5px 18px yellow;
+
+			
+		}
+		
+		10%, 15%, 60% {
+			text-shadow: none;
+		}
+		
+		}
+
+
